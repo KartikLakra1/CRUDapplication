@@ -2,7 +2,7 @@ const User = require('../models/userModels.js')
 
 // home 
 exports.home = async (req,res) => {
-    res.send('<h1>Home response</h1>')
+    res.send(`<h1>Home response and running at the port : ${process.env.PORT}</h1>`)
 }
 
 // CREATE USER
